@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 with st.sidebar:
-    st.image("/workspaces/PaginaWeb/logo.png", use_container_width=True)
+    st.image("workspaces/PaginaWeb/logo.png", use_container_width=True)
     
     selected = option_menu("Menú Principal", ['Inicio','Ansiedad','Depresión','Estrés'], 
         icons=["house-fill",'emoji-grimace-fill', 'emoji-tear-fill', 'emoji-angry-fill'], 
