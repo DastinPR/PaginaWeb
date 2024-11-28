@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 with st.sidebar:
-    st.image("C:/Users/Dastin Prado/Desktop/PG/logo.png", use_container_width=True)
+    st.image("/workspaces/PaginaWeb/logo.png", use_container_width=True)
     
     selected = option_menu("Menú Principal", ['Inicio','Ansiedad','Depresión','Estrés'], 
         icons=["house-fill",'emoji-grimace-fill', 'emoji-tear-fill', 'emoji-angry-fill'], 
@@ -44,7 +44,7 @@ if selected == "Inicio":
     entorno y alcanzar sus metas.
     """)
     
-    st.image("C:/Users/Dastin Prado/Desktop/PG/1.png", use_container_width=True)
+    st.image("/workspaces/PaginaWeb/1.png", use_container_width=True)
 
     st.write("---")  # Línea divisoria
 
@@ -66,14 +66,14 @@ if selected == "Inicio":
     - **Privacidad garantizada:** Tus datos no se almacenan ni se comparten.
     """)
 
-    st.image("C:/Users/Dastin Prado/Desktop/PG/2.png", use_container_width=True)
+    st.image("/workspaces/PaginaWeb/2.png", use_container_width=True)
 
 #SELECCIÓN ANSIEDAD
 if selected == "Ansiedad":
     st.title("ANÁLISIS DE NIVEL DE ANSIEDAD")
     
     # SELECCIONAR MODELO
-    model = joblib.load('C:/Users/Dastin Prado/Desktop/PG/salud_mental_ansiedad_MLP.pkl')
+    model = joblib.load('/workspaces/PaginaWeb/salud_mental_ansiedad_MLP.pkl')
 
     # ASIGNACIÓN DE VALORES
     valores_respuestas = {
@@ -218,7 +218,7 @@ elif selected == "Depresión":
     st.title("ANÁLISIS DE NIVEL DE DEPRESIÓN")
     
     # SELECCIONAR MODELO
-    model = joblib.load('C:/Users/Dastin Prado/Desktop/PG/salud_mental_depression_MLP.pkl')
+    model = joblib.load('/workspaces/PaginaWeb/salud_mental_depression_MLP.pkl')
     
     # ASIGNACIÓN DE VALORES
     valores_respuestas = {
@@ -386,7 +386,7 @@ elif selected == "Estrés":
     st.title("ANÁLISIS DE NIVEL DE ESTRÉS")
     
     # SELECCIONAR MODELO
-    model = joblib.load('C:/Users/Dastin Prado/Desktop/PG/salud_mental_stress_SVC.pkl')
+    model = joblib.load('/workspaces/PaginaWeb/salud_mental_stress_SVC.pkl')
     
     # ASIGNACIÓN DE VALORES
     valores_respuestas = {
